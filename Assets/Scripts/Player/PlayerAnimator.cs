@@ -2,13 +2,11 @@ using UnityEngine;
 
 [RequireComponent(typeof(Mover))]
 [RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(SpriteRenderer))]
 
 public class PlayerAnimator : MonoBehaviour
 {
     private Mover _mover;
     private Animator _animator;
-    private SpriteRenderer _spriteRenderer;
 
     private float _speed;
 
@@ -16,7 +14,6 @@ public class PlayerAnimator : MonoBehaviour
     {
         _mover = GetComponent<Mover>();
         _animator = GetComponent<Animator>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -27,11 +24,11 @@ public class PlayerAnimator : MonoBehaviour
 
         if (_mover.Direction.x < 0)
         {
-            _spriteRenderer.flipX = true;
+            Rotator.RotateLeft(gameObject);
         }
         else if(_mover.Direction.x > 0)
         {
-            _spriteRenderer.flipX = false;
+            Rotator.RotateRight(gameObject);
         }
     }
 }

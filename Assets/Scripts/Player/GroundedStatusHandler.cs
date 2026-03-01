@@ -1,13 +1,17 @@
-using System;
 using UnityEngine;
 
 public class GroundedStatusHandler : MonoBehaviour
 {
-    [SerializeField] private CollisionHandler _collisionHandler;
+    private CollisionHandler _collisionHandler;
+
+    private int _groundContactsQuantiti = 0;
 
     public bool IsGrounded { get; private set; }
 
-    private int _groundContactsQuantiti = 0;
+    private void Awake()
+    {
+        _collisionHandler = GetComponent<CollisionHandler>();
+    }
 
     private void OnEnable()
     {

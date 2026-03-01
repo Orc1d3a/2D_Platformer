@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class EnemyAnimator : MonoBehaviour
 {
-    [SerializeField] private EnemyMover _enemyMover;
-
-    private SpriteRenderer _spriteRenderer;
+    private EnemyMover _enemyMover;
 
     private void Awake()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _enemyMover = GetComponent<EnemyMover>();
     }
 
     private void OnEnable()
@@ -26,8 +24,8 @@ public class EnemyAnimator : MonoBehaviour
     private void FlipSprite()
     {
         if (transform.position.x > _enemyMover.Waypoint.position.x)
-            _spriteRenderer.flipX = true;
+            Rotator.RotateLeft(gameObject);
         else
-            _spriteRenderer.flipX = false;
+            Rotator.RotateRight(gameObject);
     }
 }

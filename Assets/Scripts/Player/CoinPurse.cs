@@ -3,12 +3,18 @@ using UnityEngine;
 
 public class CoinPurse : MonoBehaviour
 {
-    [SerializeField] private CoinDetector _coinDetector;
-    [SerializeField] private CollisionHandler _collisionHandler;
-
     public event Action<int> CoinsQuantitiChanged;
 
+    private CoinDetector _coinDetector;
+    private CollisionHandler _collisionHandler;
+
     public int Coins { get; private set; } = 0;
+
+    private void Awake()
+    {
+        _coinDetector = GetComponent<CoinDetector>();
+        _collisionHandler = GetComponent<CollisionHandler>();
+    }
 
     private void OnEnable()
     {

@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class Saver : MonoBehaviour
 {
-    [SerializeField] private CollisionHandler _collisionHandler;
+    private CollisionHandler _collisionHandler;
 
     private Vector3 _defaultPosition = new Vector3(-3,0,0);
+
+    private void Awake()
+    {
+        _collisionHandler = GetComponent<CollisionHandler>();
+    }
 
     private void OnEnable()
     {

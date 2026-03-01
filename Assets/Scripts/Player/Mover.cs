@@ -1,11 +1,11 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(GroundedStatusHandler))]
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField] private GroundedStatusHandler _groundDetector;
-
+    private GroundedStatusHandler _groundDetector;
     private Rigidbody2D _rigidbody;
 
     private Vector2 _direction = new Vector2();
@@ -18,6 +18,7 @@ public class Mover : MonoBehaviour
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        _groundDetector = GetComponent<GroundedStatusHandler>();
     }
 
     private void Update()
@@ -28,17 +29,17 @@ public class Mover : MonoBehaviour
 
     private void Move()
     {
-        _direction.x = Input.GetAxis("Horizontal");
+        _direction.x = InputReader.HorizontalAxis;
 
         if (_direction.x != 0)
         {
-            transform.Translate(_direction * _speed * Time.deltaTime);
+            transform.Translate(_direction * _speed * Time.deltaTime, Space.World);
         }
     }
 
     private void Jump()
     {
-        if (_groundDetector.IsGrounded && Input.GetAxis("Jump") > 0)
+        if (_groundDetector.IsGrounded && InputReader.IsJumpPressed)
         {
             _rigidbody.velocity = Vector2.up * _jumpForce;
         }
