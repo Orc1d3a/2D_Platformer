@@ -5,16 +5,16 @@ public class CollisionHandler : MonoBehaviour
 {
     public event Action<Collision2D> GroundEntered;
     public event Action GroundExited;
-    public event Action EnemyTouched;
+    public event Action<Collision2D, Enemy> EnemyTouched;
     public event Action DeathLevelTouched;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.TryGetComponent<Ground>(out _))
+        if (collision.gameObject.TryGetComponent<Ground>(out _))
             GroundEntered?.Invoke(collision);
-        else if(collision.gameObject.TryGetComponent<Enemy>(out _))
-            EnemyTouched?.Invoke();
-        else if(collision.gameObject.TryGetComponent<DeathLevel>(out _))
+        else if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
+            EnemyTouched?.Invoke(collision, enemy);
+        else if (collision.gameObject.TryGetComponent<DeathLevel>(out _))
             DeathLevelTouched?.Invoke();
     }
 

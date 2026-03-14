@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5028768457101988125}
   - component: {fileID: 2804923416840213095}
   - component: {fileID: 80957694532812703}
+  - component: {fileID: -280222753761596679}
   - component: {fileID: 7954156955174964378}
   - component: {fileID: 7197496549543277351}
   - component: {fileID: 8994363543675740940}
@@ -178,6 +179,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-280222753761596679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108318838081376260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326a5d9025738b46baef6b37f200847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7954156955174964378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4879b1f16f759e645946750a42bf757d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _groundDetector: {fileID: 7197496549543277351}
 --- !u!114 &7197496549543277351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007996a83b646984bbea7a4a3ef91fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collisionHandler: {fileID: 5795964134654790039}
 --- !u!114 &8994363543675740940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dde3dfce46ad85489356fde68c7ba96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collisionHandler: {fileID: 5795964134654790039}
 --- !u!114 &5795964134654790039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c582b22dff69c48b7b1092150b2111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinDetector: {fileID: 1063241689123337520}
 --- !u!114 &629355202859266986
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\UnitiProjects\\2D hw\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|D:\\UnitiProjects\\2D hw\\assets\\scripts\\player\\mover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\mover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|d:\\unitiprojects\\2d hw\\assets\\scripts\\player\\inputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\inputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|D:\\UnitiProjects\\2D hw\\assets\\scripts\\enemy\\enemyanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|D:\\UnitiProjects\\2D hw\\assets\\scripts\\player\\playeranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|D:\\UnitiProjects\\2D hw\\assets\\scripts\\rotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|D:\\UnitiProjects\\2D hw\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InputReader.cs",
-              "DocumentMoniker": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Player\\InputReader.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\InputReader.cs",
-              "ToolTip": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Player\\InputReader.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\InputReader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T10:42:36.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EnemyAnimator.cs",
-              "DocumentMoniker": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Enemy\\EnemyAnimator.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyAnimator.cs",
-              "ToolTip": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Enemy\\EnemyAnimator.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyAnimator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T10:39:48.321Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Rotator.cs",
-              "DocumentMoniker": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Rotator.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Rotator.cs",
-              "ToolTip": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Rotator.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Rotator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T09:59:12.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerAnimator.cs",
-              "DocumentMoniker": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Player\\PlayerAnimator.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAnimator.cs",
-              "ToolTip": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Player\\PlayerAnimator.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAnimator.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T09:43:49.692Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Mover.cs",
-              "DocumentMoniker": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Player\\Mover.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Mover.cs",
-              "ToolTip": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Player\\Mover.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\Mover.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACMAAABTAAAAAAAAAA==",
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
+              "ToolTip": "D:\\UnitiProjects\\2D hw\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T13:19:37.951Z",
+              "WhenOpened": "2026-03-07T11:05:40.216Z",
               "EditorCaption": ""
             }
           ]

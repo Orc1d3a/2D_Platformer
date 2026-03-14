@@ -13,17 +13,17 @@ public class EnemyAnimator : MonoBehaviour
 
     private void OnEnable()
     {
-        _enemyMover.WaypointChanged += FlipSprite;
+        _enemyMover.GoalChanged += FlipSprite;
     }
 
     private void OnDisable()
     {
-        _enemyMover.WaypointChanged -= FlipSprite;
+        _enemyMover.GoalChanged -= FlipSprite;
     }
 
-    private void FlipSprite()
+    private void FlipSprite(Transform goal)
     {
-        if (transform.position.x > _enemyMover.Waypoint.position.x)
+        if (transform.position.x > goal.position.x)
             Rotator.RotateLeft(gameObject);
         else
             Rotator.RotateRight(gameObject);

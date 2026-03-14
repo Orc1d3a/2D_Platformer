@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(GroundedStatusHandler))]
@@ -12,10 +13,11 @@ public class Mover : MonoBehaviour
 
     private float _speed = 4f;
     private float _jumpForce = 8f;
+    private float _knockbackForce = 8f;
 
     public Vector2 Direction => _direction;
 
-    private void Start()
+    private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _groundDetector = GetComponent<GroundedStatusHandler>();
@@ -25,6 +27,14 @@ public class Mover : MonoBehaviour
     {
         Move();
         Jump();
+    }
+
+    public void Knockback(Transform enemyPosition)
+    {
+        Vector2 direction = (transform.position - enemyPosition.position).normalized;
+
+        _rigidbody.velocity = Vector2.zero;
+        _rigidbody.AddForce(direction * _knockbackForce, ForceMode2D.Impulse);
     }
 
     private void Move()
