@@ -1,9 +1,25 @@
 using UnityEngine;
 
+[RequireComponent (typeof(EnemyMover))]
+[RequireComponent (typeof(PlayerDetector))]
+[RequireComponent (typeof(Health))]
+
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private EnemyMover _enemyMover;
-    [SerializeField] private PlayerDetector _playerDetector;
+    [SerializeField] private Canvas _canvas;
+
+    private EnemyMover _enemyMover;
+    private PlayerDetector _playerDetector;
+    private Health _health;
+
+    public float Damage { get; private set; } = 1;
+
+    private void Awake()
+    {
+        _enemyMover = GetComponent<EnemyMover>();
+        _playerDetector = GetComponent<PlayerDetector>();
+        _health = GetComponent<Health>();
+    }
 
     private void OnEnable()
     {
@@ -23,8 +39,21 @@ public class Enemy : MonoBehaviour
             Die();
     }
 
+    public void TakeDamage(float value)
+    {
+        if (_health.CurrentHealth > 0)
+        {
+            _health.TakeDamage(value);
+        }
+
+        if (_health.CurrentHealth <= 0)
+            Die();
+    }
+
     public void Die()
     {
+        Destroy(_canvas.gameObject);
+
         Destroy(gameObject);
     }
 

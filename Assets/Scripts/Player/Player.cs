@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(TriggerHandler))]
 [RequireComponent(typeof(CollisionHandler))]
 [RequireComponent(typeof(GroundedStatusHandler))]
+[RequireComponent(typeof(Health))]
 
 public class Player : MonoBehaviour
 {
@@ -17,9 +18,9 @@ public class Player : MonoBehaviour
     private GroundedStatusHandler _groundedStatusHandler;
     private Mover _mover;
     private Saver _saver;
+    private Health _health;
 
-    private int _maxHealth = 5;
-    private int _health;
+    private float _damage = 1;
 
     private void Awake()
     {
@@ -29,8 +30,7 @@ public class Player : MonoBehaviour
         _groundedStatusHandler = GetComponent<GroundedStatusHandler>();
         _mover = GetComponent<Mover>();
         _saver = GetComponent<Saver>();
-
-        _health = _maxHealth;
+        _health = GetComponent<Health>();
     }
 
     private void OnEnable()
@@ -41,16 +41,18 @@ public class Player : MonoBehaviour
         _collisionHandler.EnemyTouched += HandleEnemyTouch;
         _collisionHandler.GroundEntered += SetGrounded;
         _collisionHandler.GroundExited += SetAirborne;
-        _collisionHandler.DeathLevelTouched += Save;
+        _collisionHandler.DeathLevelTouched += HandleDeathLevelTouch;
     }
 
     private void OnDisable()
     {
         _triggerHandler.CoinTouched -= AddCoin;
+        _triggerHandler.MedkitTouched -= Heal;
+
         _collisionHandler.EnemyTouched -= HandleEnemyTouch;
         _collisionHandler.GroundEntered -= SetGrounded;
         _collisionHandler.GroundExited -= SetAirborne;
-        _collisionHandler.DeathLevelTouched -= Save;
+        _collisionHandler.DeathLevelTouched -= HandleDeathLevelTouch;
     }
 
     private void AddCoin()
@@ -58,9 +60,9 @@ public class Player : MonoBehaviour
         _coinPurse.AddCoin();
     }
 
-    private void Heal()
+    private void Heal(float value)
     {
-            _health = _maxHealth;
+        _health.Heal(value);
     }
 
     private void HandleEnemyTouch(Collision2D collision, Enemy enemy)
@@ -80,22 +82,20 @@ public class Player : MonoBehaviour
 
     private void Attack(Enemy enemy)
     {
-        enemy.Die();
+        enemy.TakeDamage(_damage);
     }
 
     private void TakeDamage(Enemy enemy)
     {
-        if (_health > 0)
+        if (_health.CurrentHealth > 0)
         {
-            _health--;
+            _health.TakeDamage(enemy.Damage);
 
             _mover.Knockback(enemy.transform);
         }
 
-        if (_health <= 0)
+        if (_health.CurrentHealth <= 0)
             Died?.Invoke();
-
-        _coinPurse.RemoveCoin();
     }
 
     private void SetGrounded(Collision2D collision)
@@ -116,8 +116,12 @@ public class Player : MonoBehaviour
         _groundedStatusHandler.SetAirborne();
     }
 
-    private void Save()
+    private void HandleDeathLevelTouch()
     {
+        float damage = 1;
+
+        _health.TakeDamage(damage);
+
         _saver.Teleport();
     }
 }

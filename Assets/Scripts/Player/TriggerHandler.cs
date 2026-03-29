@@ -4,7 +4,7 @@ using UnityEngine;
 public class TriggerHandler : MonoBehaviour
 {
     public event Action CoinTouched;
-    public event Action MedkitTouched;
+    public event Action<float> MedkitTouched;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,7 +16,7 @@ public class TriggerHandler : MonoBehaviour
         }
         else if (collision.TryGetComponent(out Medkit medkit))
         {
-            MedkitTouched?.Invoke();
+            MedkitTouched?.Invoke(medkit.HealValue);
 
             medkit.Destroy();
         }

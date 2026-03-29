@@ -9,7 +9,8 @@ public class MedkitSpawner : MonoBehaviour
 
     private void Awake()
     {
-        _spawnPoints = GetComponentsInChildren<Transform>().Where(transform => transform != this.transform).ToArray();
+        _spawnPoints = GetComponentsInChildren<Transform>();
+        _spawnPoints = _spawnPoints.Where(transform => transform != this.transform).ToArray();
     }
 
     private void Start()
