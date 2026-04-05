@@ -114,10 +114,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\Scripts\Player\ClosestEnemyProvider.cs" />
     <Compile Include="Assets\Scripts\HealthUI\Health.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAnimator.cs" />
-    <Compile Include="Assets\Scripts\Player\Vampirism.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
   <ItemGroup>
