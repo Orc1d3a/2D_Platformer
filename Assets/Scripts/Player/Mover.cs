@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 
 public class Mover : MonoBehaviour
 {
+    [SerializeField] private InputReader _inputReader;
+
     private GroundedStatusHandler _groundDetector;
     private Rigidbody2D _rigidbody;
 
@@ -39,7 +41,7 @@ public class Mover : MonoBehaviour
 
     private void Move()
     {
-        _direction.x = InputReader.HorizontalAxis;
+        _direction.x = _inputReader.HorizontalAxis;
 
         if (_direction.x != 0)
         {
@@ -49,7 +51,7 @@ public class Mover : MonoBehaviour
 
     private void Jump()
     {
-        if (_groundDetector.IsGrounded && InputReader.IsJumpPressed)
+        if (_groundDetector.IsGrounded && _inputReader.IsJumpPressed)
         {
             _rigidbody.velocity = Vector2.up * _jumpForce;
         }

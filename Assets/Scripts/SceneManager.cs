@@ -3,16 +3,16 @@ using UnityEngine;
 
 public class Scene : MonoBehaviour
 {
-    [SerializeField] Player _player;
+    [SerializeField] Health _playerHealth;
 
     private void OnEnable()
     {
-        _player.Died += RestartScene;
+        _playerHealth.Died += RestartScene;
     }
 
     private void OnDisable()
     {
-        _player.Died -= RestartScene;
+        _playerHealth.Died -= RestartScene;
     }
 
     private void RestartScene()

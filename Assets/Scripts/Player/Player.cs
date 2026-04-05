@@ -6,10 +6,11 @@ using UnityEngine;
 [RequireComponent(typeof(CollisionHandler))]
 [RequireComponent(typeof(GroundedStatusHandler))]
 [RequireComponent(typeof(Health))]
+[RequireComponent(typeof(Vampirism))]
 
 public class Player : MonoBehaviour
 {
-    public event Action Died;
+    [SerializeField] private InputReader _inputReader;
 
     private CoinPurse _coinPurse;
     private TriggerHandler _triggerHandler;
@@ -19,6 +20,8 @@ public class Player : MonoBehaviour
     private Mover _mover;
     private Saver _saver;
     private Health _health;
+
+    private Vampirism _vampirism;
 
     private float _damage = 1;
 
@@ -31,6 +34,7 @@ public class Player : MonoBehaviour
         _mover = GetComponent<Mover>();
         _saver = GetComponent<Saver>();
         _health = GetComponent<Health>();
+        _vampirism = GetComponent<Vampirism>();
     }
 
     private void OnEnable()
@@ -42,6 +46,8 @@ public class Player : MonoBehaviour
         _collisionHandler.GroundEntered += SetGrounded;
         _collisionHandler.GroundExited += SetAirborne;
         _collisionHandler.DeathLevelTouched += HandleDeathLevelTouch;
+
+        _inputReader.VampirismPressed += StartVampirism;
     }
 
     private void OnDisable()
@@ -53,6 +59,8 @@ public class Player : MonoBehaviour
         _collisionHandler.GroundEntered -= SetGrounded;
         _collisionHandler.GroundExited -= SetAirborne;
         _collisionHandler.DeathLevelTouched -= HandleDeathLevelTouch;
+
+        _inputReader.VampirismPressed -= StartVampirism;
     }
 
     private void AddCoin()
@@ -93,9 +101,6 @@ public class Player : MonoBehaviour
 
             _mover.Knockback(enemy.transform);
         }
-
-        if (_health.CurrentHealth <= 0)
-            Died?.Invoke();
     }
 
     private void SetGrounded(Collision2D collision)
@@ -123,5 +128,10 @@ public class Player : MonoBehaviour
         _health.TakeDamage(damage);
 
         _saver.Teleport();
+    }
+
+    private void StartVampirism()
+    {
+        _vampirism.Work();
     }
 }

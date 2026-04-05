@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent (typeof(EnemyMover))]
@@ -32,10 +33,10 @@ public class Enemy : MonoBehaviour
         _playerDetector.PlayerDetected -= ChangeGoal;
         _playerDetector.PlayerLost -= ChangeGoal;
     }
-
-    private void OnCollisionEnter(Collision collision)
+    
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (TryGetComponent<DeathLevel>(out _))
+        if (collision.gameObject.TryGetComponent<DeathLevel>(out _))
             Die();
     }
 

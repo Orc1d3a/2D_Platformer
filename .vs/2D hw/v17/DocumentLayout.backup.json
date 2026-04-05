@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "D:\\Uniti Projects\\2D hw\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|D:\\Uniti Projects\\2D hw\\assets\\scripts\\healthui\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|d:\\uniti projects\\2d hw\\assets\\scripts\\player\\vampirism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\vampirism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|d:\\uniti projects\\2d hw\\assets\\scripts\\healthui\\smoothbarui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthui\\smoothbarui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|d:\\uniti projects\\2d hw\\assets\\scripts\\healthui\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthui\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,28 +19,8 @@
       "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|D:\\Uniti Projects\\2D hw\\assets\\scripts\\healthui\\smoothbarui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthui\\smoothbarui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|D:\\Uniti Projects\\2D hw\\assets\\scripts\\player\\triggerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\triggerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|D:\\Uniti Projects\\2D hw\\assets\\scripts\\medkit\\medkit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\medkit\\medkit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|D:\\Uniti Projects\\2D hw\\assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|d:\\uniti projects\\2d hw\\assets\\scripts\\entitypursuer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entitypursuer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|d:\\uniti projects\\2d hw\\assets\\scripts\\medkit\\medkitspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\medkit\\medkitspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|d:\\uniti projects\\2d hw\\assets\\scripts\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D499ECE9-7D20-4A79-A02B-3EFE4303B8FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MedkitSpawner.cs",
-              "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Medkit\\MedkitSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Medkit\\MedkitSpawner.cs",
-              "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Medkit\\MedkitSpawner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Medkit\\MedkitSpawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T14:44:17.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EntityPursuer.cs",
-              "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\EntityPursuer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EntityPursuer.cs",
-              "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\EntityPursuer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EntityPursuer.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T14:00:36.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Health.cs",
-              "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\HealthUI\\Health.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthUI\\Health.cs",
-              "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\HealthUI\\Health.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HealthUI\\Health.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T13:47:46.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Player.cs",
-              "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Player\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
-              "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Player\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAUwHoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T11:05:40.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Enemy\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Enemy.cs",
-              "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Enemy\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Enemy.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T11:22:06.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Medkit.cs",
-              "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Medkit\\Medkit.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Medkit\\Medkit.cs",
-              "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Medkit\\Medkit.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Medkit\\Medkit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T11:18:41.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TriggerHandler.cs",
-              "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Player\\TriggerHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\TriggerHandler.cs",
-              "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Player\\TriggerHandler.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\TriggerHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T11:17:19.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "SmoothBarUI.cs",
               "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\HealthUI\\SmoothBarUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthUI\\SmoothBarUI.cs",
               "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\HealthUI\\SmoothBarUI.cs",
               "RelativeToolTip": "Assets\\Scripts\\HealthUI\\SmoothBarUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T11:11:54.647Z",
+              "WhenOpened": "2026-04-05T16:06:54.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Vampirism.cs",
+              "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Player\\Vampirism.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Vampirism.cs",
+              "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Player\\Vampirism.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Vampirism.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAASwEEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T16:02:39.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SceneManager.cs",
+              "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\SceneManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneManager.cs",
+              "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\SceneManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T15:53:23.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Health.cs",
+              "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\HealthUI\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthUI\\Health.cs",
+              "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\HealthUI\\Health.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthUI\\Health.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T15:45:38.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
+              "ToolTip": "D:\\Uniti Projects\\2D hw\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T11:05:40.216Z",
               "EditorCaption": ""
             }
           ]

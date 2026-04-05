@@ -4,6 +4,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public event Action HealthChanged;
+    public event Action Died;
 
     public float MaxHealth { get; private set; } = 3f;
     public float CurrentHealth { get; private set; }
@@ -20,7 +21,7 @@ public class Health : MonoBehaviour
             CurrentHealth -= value;
 
         if (CurrentHealth < 0)
-            CurrentHealth = 0;
+            Died?.Invoke();
 
         HealthChanged?.Invoke();
     }
